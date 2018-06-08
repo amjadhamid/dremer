@@ -1,0 +1,15 @@
+{
+  "name": "dreamer",
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  },
+  "version": "1.0.0",
+  "description": "thhi is gulp project to help developer",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "amjad",
+  "license": "ISC"
+}

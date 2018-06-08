@@ -1,0 +1,259 @@
+
+<!-- 
+ 1- ابدا باللغة الانكليززية
+  2-لا تستخدم الاكلمات مباشرة باللصفحة بملف لالغات
+ 3- الحواف للاباء افضل من الابناء
+
+ 4- الحواف للطرفين افضل من اتجاه واحد
+5-  dir="rtl" صفة لاتجاه اللغة العربية
+6-اعمل تظليل للصفة التي يجب ان تعدلها  او تحديد
+7-اعمل بنفس اللحظة التعديلين للغتين
+
+8-انقل التعليقات لكل الصفحات
+
+9-اعمل     display:inline-block; 
+لا تعمل float left or right
+
+10-ملف ال rtl فقط للاتجااااااهات
+
+11-العرض غير مجبور به لاختلاف اللغة العربية عن االنكليزي
+12- في الايقونات استعمل اضافة في ال css
+@import "./fontawesome/scss/fontawesome.scss";
+@import "./fontawesome/scss/fa-solid.scss";
+@import "./fontawesome/scss/fa-brands.scss";
+
+.user {
+  @include fa-icon;
+  @extend .fas;
+
+  &:before {
+    content: fa-content($fa-var-user);
+  }
+}
+
+.twitter {
+  @include fa-icon;
+  @extend .fab;
+
+  &:before {
+    content: fa-content($fa-var-twitter);
+  }
+}
+
+
+
+مميزات 
+1- -<bdi>خاصية لقلب الجهة بشكل عام
+2-<inbut name="name"  dir="auto">
+<p dir="auto">
+يقلب الجهة حسب اتجاه الكتابة
+
+3- text-align ="end or start"
+    text-align=""
+4-  float [inline start | inline end]
+  float =""
+
+
+
+
+نصائح  
+1- اعمل كلاسات 
+float-left 
+ float-right
+text-align : right
+ text-align :left
+ ltr-dir
+ rtl-dir 
+
+ الخواص التي تحتاج الى تركيز
+ margine
+ padding
+ Border-Redius
+ pseudo
+ border
+ box-shadow
+ transform : rotate(20deg)
+ TEXT-ALIGN
+ position left right top bottom
+ 
+ -->
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+<title>Responsive wep disign</title>
+
+<!-- Bootstrap -->
+<link rel="stylesheet" href="css/bootstrap.css">
+<link rel="stylesheet" href="css/style.css">
+<!--   next of style.css to do ovverride on it -->
+<link rel="stylesheet" href="css/stylet-rtl.css">
+
+<link rel="stylesheet" href="css/normalize.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+
+
+<!-- start header  -->
+<div class="header text-center">
+ <div class="overlay">
+    <!--the container must be here because the header have position absolute  -->
+ <div class="container"> 
+       <h1>اختر خطتك ؟ ....<h1>
+       <div class="plan float-left">Free plan 10GB</div>
+   
+       <div class="plan float-left">10$ plan 40GB</div>
+       <div class="clearfix"></div>
+
+      <div class="order hidden-xs hidden-sm">10$ another plan 40GB</div>
+     </div> 
+    </div> 
+ </div> 
+     <div class="clearfix"></div>
+
+<!-- end header  -->
+
+
+<!-- start features  -->
+<div class="features">
+    <div class="container">
+            <h2 class="h1 text-center">Our feature</h2>
+
+             <div class="feat text-center float-left padding-eng">
+               <h2>fast </h2>
+               <p class="responsive-pargraph"> this is fast  feature</p>
+            </div>
+         <div class="feat text-center float-left padding-eng">
+            <h2>secure  </h2>
+            <p class="responsive-pargraph"> this is secure feature</p>
+         </div>
+
+         <div class="feat text-center float-left padding-eng">
+            <h2>cheap</h2>
+            <p class="responsive-pargraph"> this is cheap feature</p>
+         </div>
+   </div>
+</div>
+
+
+
+<!-- when you finish any  float section put this -->
+<div class="clearfix"></div>
+   
+<!-- end features  -->
+
+<!--  start galary -->
+<div class="our-work">
+
+  <div class="row">
+    <div class="col-lg-3 col-md-4 col-sm-6 Image">
+    <img class="" src="images/400X200.gif" alt="Thumbnail Image 1"/> 
+      </div>
+    <div class="col-lg-3 col-md-4 col-sm-6 Image">
+          <img class="" src="images/400X200.gif" alt="Thumbnail Image 1"/> 
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 Image">
+               <img class="" src="images/400X200.gif" alt="Thumbnail Image 1"/> 
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 Image">
+            <img class="" src="images/400X200.gif" alt="Thumbnail Image 1"/> 
+      </div>    
+  </div>
+</div>
+
+<!-- when you finish any  float section put this -->
+<div class="clearfix"></div>
+
+
+
+
+
+<!--  start pricing table -->
+
+<div class="pricingTable  text-center">
+    <div class="container">
+       <h2 class="h1" > Our pricing plan </h2>
+       <div class='pricing-plan'>
+          <h3>plus</h3>
+          <span class="pricing"> 10$ </span>
+          <ul class="pricing-ul list-unstiled">
+            <li>Test</li>
+            <li>Test</li>
+            <li>Test</li>
+            <li>Test</li>
+            <li>Test</li>
+          </ul>
+       </div>
+
+    </div>
+</div>
+
+<div class="clearfix"></div>
+
+<!--  start pricing table -->
+<footer class="text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <p>Copyright © MyWebsite. All rights reserved.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+<!--  end footer -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="js/jquery-1.11.3.min.js"></script> 
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/bootstrap.js"></script>
+<script src="js/main.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

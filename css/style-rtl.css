@@ -1,0 +1,353 @@
+/* global rules */
+*{
+    -webkit-box-sizing : border-box;
+    -moz-box-sizing : border-box;
+    box-sizing : border-box;
+
+}
+/* end */
+.features .feat{
+    width: 30%;
+    margin-bottom:30px;
+    border: 2px solid;
+}
+
+/* start pricing table */
+.pricingTable{
+      background-color : #444;
+      color : #FFF ; 
+      padding: 50px 0
+  }
+.pricingTable .h1 {
+    margin: 0 0 20px;
+    font-size : 50px;
+}
+
+
+
+ .pricing-ul{
+    list-style:none;
+}
+/* end pricig table */
+/* start header */
+.header{
+    background : url('http://www.sayidaty.net/sites/default/files/styles/800x510/public/2017/04/26/2549771-936259996.jpg')no-repeat top center;
+     -webkit-background-size: cover;
+     -moz-background-size: cover ;
+     background-size:  cover;
+     min-height: 600px ;
+     position: relative;
+}
+.header .overlay{
+    position: absolute;
+    top : 0; left : 0; width:100% ; height:100% ;
+    color : #FFF;
+}
+.header .overlay h1 {
+    font-size:  50px;
+    margin-top: 100px;
+}
+/* 1% + 1% + 48% %+ 48% + 1% + 1% */
+/* any float need clearfix */
+.header .overlay .plan{
+   border: 5px solid #FFF ;
+   font-size : 30px;
+   width:48%;
+   padding:20px; 
+   margin-right :1%;
+   margin-left :1%;
+}
+.header .overlay .order{
+   border: 5px solid #FFF ;
+   font-size : 30px;
+   padding:20px; 
+   margin-right :1%;
+   margin-left :1%;
+   margin-top :3%;
+}
+/* tthis custum media is not found in boostrab */
+@media (max-width: 420px){ 
+.header{
+max-height: 200px!important ;
+
+}
+h1{
+/* when you see the probiraty but with line in it use the important */
+margin-top: 10px !important;
+font-size:42px !important;
+margin : 6px  !important
+
+}
+.header .overlay .plan{
+float: none;
+width:90%;
+margin :0 auto 20px;
+font-size:22px;
+margin : 7px auto  !important
+}
+}
+
+@media (max-width: 767px){ 
+
+    h1{
+       /* when you see the probiraty but with line in it use the important */
+   margin-top: 10px !important;
+   font-size:42px !important;
+   margin : 6px  !important
+
+    }
+.header .overlay .plan{
+    float: none;
+    width:90%;
+    margin :0 auto 2px;
+    font-size:22px;
+    margin : 7px auto  !important
+}
+}
+@media (max-width: 767px){ 
+.header .overlay .plan{
+    float: none;
+    margin :0 auto 20px;
+}
+}
+
+/* end header */
+
+/* start features */
+.features .feat{
+    width: 30%;
+    margin-bottom:30px;
+    border: 2px solid;
+}
+
+@media (max-width: 768px){
+     .features .feat{
+              width: 100%;
+
+          }
+      .features .feat:nth-of-type(even) {
+          background-color: #EEE;  
+      }
+}
+@media (min-width: 768px){
+     .features .feat:first-of-type {
+         width : 100%;
+     }
+     .features .feat:not(first-of-type) {
+         width : 50%;
+     }
+}
+@media (min-width: 992px){
+     .features .feat {
+         width : 33.3333%;
+     }
+}
+
+
+/* end features */
+
+/* start our works */
+.our-work .row .Image{
+    width:15%;
+    display:inline;
+    
+}
+.our-work .image{
+
+}
+
+
+/* end our warks */
+
+
+
+
+
+
+/* mobile  tablets */
+@media (max-width: 767px){ 
+ .visible-xs{
+     display: block !important
+ }
+.hidden-xs{
+    display:none !important;
+}
+.our-work .row .Image{
+
+    width:100%!important
+}
+
+}
+
+/* small */
+@media (min-width: 767px)  (max-width : 991px){
+  .container{
+      width:780px;
+  }
+ .visible-sm{
+     display: block !important
+ }
+.hidden-sm{
+    display:none !important;
+}
+.responsive-pargraph{
+    text-align:center;
+    font-size:22px !important;
+}
+
+.our-work .image{
+    width:50%
+}
+
+
+}
+
+/* medium */
+@media (min-width: 992px) and (max-width : 1199px){
+    .container{
+      width:1000px;
+  }
+ .visible-md{
+     display: block !important
+ }
+.hidden-md{
+    display:none !important;
+}
+
+.our-work .image{
+    width:33.333%
+}
+
+}
+
+/* large */
+@media (min-width: 1200px){
+    .container{
+      width:1200px;
+  }
+ .visible-lg{
+     display: block !important
+ }
+.hidden-lg{
+    display:none !important;
+}
+
+.our-work .image{
+    width:25%
+}
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* start my freamwork */
+.text-center{
+    text-align: center;
+
+}
+.container{
+    margin: auto ; 
+    
+}
+.clearfix{
+    clear :both;
+}
+
+/* visible in normal way must be hidden but in the size 
+which you wanted you change it to block */
+.visible-xs,
+.visible-sm,
+.visible-md,
+.visible-lg,{
+display:none;
+}
+
+
+.float-left{
+    float: left;
+    /* for arabic */
+    direction:rtl ;
+        display:inline-block; 
+
+}
+
+.float-right{
+    float: right;
+    direction:rtl ;
+    display:inline-block; 
+}
+
+
+.h1{
+    font-size:2em;
+}
+.padding-eng{
+    padding: 0 20px 0 0 ;
+}
+
+.padding-ara{
+    padding: 0 0 20px  0 ;
+}
+
+.responsive-pargraph{
+    line-height:1.8em
+}
+.responsive-image{
+    width:100%;
+}
+
+
+.list-unstiled{
+    margin: 0 ;
+     padding : 0;
+     list-style: none;
+}
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+/* end my freamwork */
